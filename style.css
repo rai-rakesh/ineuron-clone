@@ -5,6 +5,8 @@
 :root {
     /* text colors */
     --text-gray: #808291;
+    --light-gray: #8C8E90;
+    --border-blue:#4C68FF;
     --text-white: #f8f9fa;
     --text-light: #f6f6f6;
     --text-dark: #1A3260;
@@ -277,6 +279,9 @@ ul {
     width: 50%;
 }
 
+.circle {
+    border-radius: 50%;
+}
 
 /* ------------------- /Global Classes ------------------------ */
 
@@ -315,6 +320,7 @@ ul {
     .container {
         max-width: 1024px;
     }
+    
     #nav .search-icon button {
         display: inline-block !important;
     }
@@ -542,9 +548,7 @@ ul {
 
 /*-----counting-area-----*/
 
-#site-main .counting-area {
-    padding: 7em 0;
-}
+
 
 #site-main .counting-area .grid-one p {
     width: 80%;
@@ -582,6 +586,11 @@ ul {
 }
 
 
+.card_image img {
+
+    width: 100%;
+    border-radius:  20px 20px 0 0;
+}
 /*-----/Card-area-----*/
 
 
@@ -612,6 +621,48 @@ ul {
 
 
 /*-----/Card-area-----*/
+
+
+/*-----feedback-----*/
+
+.feedback-cards {
+    justify-content: space-around;
+}
+
+.prof-img {
+
+    height: 380px;
+    width: 400px;
+}
+
+.prof-img img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--border-blue);
+
+}
+
+.right-prof-img {
+    height: 250px;
+    width: 400px;
+}
+
+.right-prof-img img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--border-blue);
+}
+
+.img2 {
+    margin-top: 40px;
+}
+
+.border-gray{
+    border: 0.5px solid var(--light-gray);
+}
+/*-----/feedback-----*/
 
 
 /*-----ready-area-----*/
