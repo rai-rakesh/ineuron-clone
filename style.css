@@ -6,7 +6,7 @@
     /* text colors */
     --text-gray: #808291;
     --light-gray: #8C8E90;
-    --border-blue:#4C68FF;
+    --border-blue: #4C68FF;
     --text-white: #f8f9fa;
     --text-light: #f6f6f6;
     --text-dark: #1A3260;
@@ -283,6 +283,7 @@ ul {
     border-radius: 50%;
 }
 
+
 /* ------------------- /Global Classes ------------------------ */
 
 
@@ -320,7 +321,6 @@ ul {
     .container {
         max-width: 1024px;
     }
-    
     #nav .search-icon button {
         display: inline-block !important;
     }
@@ -359,6 +359,9 @@ ul {
     }
     #nav .flex-initial ul button {
         display: inline-block !important;
+    }
+    .team-img {
+        display: block !important;
     }
 }
 
@@ -451,6 +454,7 @@ ul {
     position: absolute;
     top: 200px;
     right: -25px;
+    display: none;
 }
 
 .team-img img {
@@ -548,8 +552,6 @@ ul {
 
 /*-----counting-area-----*/
 
-
-
 #site-main .counting-area .grid-one p {
     width: 80%;
 }
@@ -585,12 +587,12 @@ ul {
     row-gap: 2em;
 }
 
-
 .card_image img {
-
     width: 100%;
-    border-radius:  20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
 }
+
+
 /*-----/Card-area-----*/
 
 
@@ -630,8 +632,7 @@ ul {
 }
 
 .prof-img {
-
-    height: 380px;
+    height: 400px;
     width: 400px;
 }
 
@@ -640,7 +641,6 @@ ul {
     width: 80px;
     border-radius: 50%;
     border: 2px solid var(--border-blue);
-
 }
 
 .right-prof-img {
@@ -659,9 +659,11 @@ ul {
     margin-top: 40px;
 }
 
-.border-gray{
+.border-gray {
     border: 0.5px solid var(--light-gray);
 }
+
+
 /*-----/feedback-----*/
 
 
@@ -717,3 +719,14 @@ ul {
 
 
 /*-----/footer-----*/
+
+.company-images img {
+    height: 100px;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cols-2 {
+    grid-template-columns: 1fr 2fr;
+}
